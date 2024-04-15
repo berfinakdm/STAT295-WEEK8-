@@ -1,0 +1,118 @@
+---
+title: "stat295(week_8)"
+author: "BERFİN"
+date: "`r Sys.Date()`"
+output: html_document
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries, include=FALSE}
+library(gapminder)
+library(ggplot2)
+library(tidyverse)
+```
+
+# introduction to r markdown
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring *HTML*, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Including Plots
+
+You can also embed plots, for example:
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+This project includes some summary statistics
+
+```{r cars}
+summary(cars)
+
+```
+
+Let's embed plots
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+
+```
+
+# List
+
+i.  bullet list 1
+
+ii. bullet list 2
+
+iii. bullet list 3
+
+# Format
+
+-   superscript: 2^nd^
+-   subscript: CO~2~
+-   strike-through: ~~mistake~~
+
+## Code Chunk Options
+
+```{r read-gapminder, eval=FALSE, echo=FALSE}
+
+gap <- read.csv("gapminder.csv")
+```
+
+```{r, warning=FALSE, include=TRUE, echo=FALSE}
+sqrt(-1)
+```
+
+## Inline Codes
+
+```{r, include=FALSE}
+data <- mtcars
+
+```
+
+I want to add some inline codes such as `r sqrt(25)`, there are `r nrow(data)` lines in iris data. the number of variables in iris data is `r ncol(data)`, here are the variables `r names(data)`
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+|      |      |      |
+
+: table1
+
+## Table
+
+```{r}
+top_gap <- head(gapminder)
+knitr::kable(top_gap)
+knitr::kable(top_gap,
+             caption = "the first rows of gapminder")
+```
+
+```{r mytable1}
+knitr::kable(top_gap,
+             caption = "the first rows of gapminder")
+```
+
+To cite a table , we can use Table \@ref(tab:mytable1)
+
+```{r gg-oz-gapminder, fig.cap="Life Exp. from 1952 to 2007 for Turkey"}
+gapminder %>% 
+  filter(country == "Turkey") %>% 
+  ggplot(aes(year, lifeExp)) +
+  geom_point()
+```
+
+see the figure \@ref(fig:gg-oz-gapminder)
+
+As an example we've used the following file
+
+## Reference
+
+[@ma2018]

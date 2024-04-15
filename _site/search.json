@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#meet-quarto",
+    "href": "hello.html#meet-quarto",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#meet-the-penguins",
+    "href": "hello.html#meet-the-penguins",
+    "title": "Hello, Quarto",
+    "section": "2 Meet the penguins",
+    "text": "2 Meet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica. this package is (Gorman, Williams, and Fraser 2014)"
+  },
+  {
+    "objectID": "hello.html#the-penguin-plot",
+    "href": "hello.html#the-penguin-plot",
+    "title": "Hello, Quarto",
+    "section": "3 The Penguin Plot",
+    "text": "3 The Penguin Plot\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\nCode\nggplot(penguins, \n       aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(\n    title = \"Flipper and bill length\",\n    subtitle = \"Dimensions for penguins at Palmer Station LTER\",\n    x = \"Flipper length (mm)\", y = \"Bill length (mm)\",\n    color = \"Penguin species\", shape = \"Penguin species\"\n  ) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "hello.html#the-penguin-table",
+    "href": "hello.html#the-penguin-table",
+    "title": "Hello, Quarto",
+    "section": "4 The Penguin Table",
+    "text": "4 The Penguin Table\n\nMy Table\n\n\nCol1\nCol2\nCol3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe table is taken from (gokalpyavuz2020?)\nIf you need to install TinyTeX, use the following command:\nquarto install tinytex"
+  },
+  {
+    "objectID": "week8.html",
+    "href": "week8.html",
+    "title": "stat295(week_8)",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\n\n\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\nThis project includes some summary statistics\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nLet’s embed plots"
+  },
+  {
+    "objectID": "week8.html#r-markdown",
+    "href": "week8.html#r-markdown",
+    "title": "stat295(week_8)",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:"
+  },
+  {
+    "objectID": "week8.html#including-plots",
+    "href": "week8.html#including-plots",
+    "title": "stat295(week_8)",
+    "section": "",
+    "text": "You can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.\nThis project includes some summary statistics\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nLet’s embed plots"
+  },
+  {
+    "objectID": "week8.html#code-chunk-options",
+    "href": "week8.html#code-chunk-options",
+    "title": "stat295(week_8)",
+    "section": "Code Chunk Options",
+    "text": "Code Chunk Options\n\n\n[1] NaN"
+  },
+  {
+    "objectID": "week8.html#inline-codes",
+    "href": "week8.html#inline-codes",
+    "title": "stat295(week_8)",
+    "section": "Inline Codes",
+    "text": "Inline Codes\nI want to add some inline codes such as 5, there are 32 lines in iris data. the number of variables in iris data is 11, here are the variables mpg, cyl, disp, hp, drat, wt, qsec, vs, am, gear, carb\n\ntable1\n\n\nCol1\nCol2\nCol3"
+  },
+  {
+    "objectID": "week8.html#table",
+    "href": "week8.html#table",
+    "title": "stat295(week_8)",
+    "section": "Table",
+    "text": "Table\n\ntop_gap &lt;- head(gapminder)\nknitr::kable(top_gap)\n\n\n\n\ncountry\ncontinent\nyear\nlifeExp\npop\ngdpPercap\n\n\n\n\nAfghanistan\nAsia\n1952\n28.801\n8425333\n779.4453\n\n\nAfghanistan\nAsia\n1957\n30.332\n9240934\n820.8530\n\n\nAfghanistan\nAsia\n1962\n31.997\n10267083\n853.1007\n\n\nAfghanistan\nAsia\n1967\n34.020\n11537966\n836.1971\n\n\nAfghanistan\nAsia\n1972\n36.088\n13079460\n739.9811\n\n\nAfghanistan\nAsia\n1977\n38.438\n14880372\n786.1134\n\n\n\n\nknitr::kable(top_gap,\n             caption = \"the first rows of gapminder\")\n\n\nthe first rows of gapminder\n\n\ncountry\ncontinent\nyear\nlifeExp\npop\ngdpPercap\n\n\n\n\nAfghanistan\nAsia\n1952\n28.801\n8425333\n779.4453\n\n\nAfghanistan\nAsia\n1957\n30.332\n9240934\n820.8530\n\n\nAfghanistan\nAsia\n1962\n31.997\n10267083\n853.1007\n\n\nAfghanistan\nAsia\n1967\n34.020\n11537966\n836.1971\n\n\nAfghanistan\nAsia\n1972\n36.088\n13079460\n739.9811\n\n\nAfghanistan\nAsia\n1977\n38.438\n14880372\n786.1134\n\n\n\n\n\n\nknitr::kable(top_gap,\n             caption = \"the first rows of gapminder\")\n\n\nthe first rows of gapminder\n\n\ncountry\ncontinent\nyear\nlifeExp\npop\ngdpPercap\n\n\n\n\nAfghanistan\nAsia\n1952\n28.801\n8425333\n779.4453\n\n\nAfghanistan\nAsia\n1957\n30.332\n9240934\n820.8530\n\n\nAfghanistan\nAsia\n1962\n31.997\n10267083\n853.1007\n\n\nAfghanistan\nAsia\n1967\n34.020\n11537966\n836.1971\n\n\nAfghanistan\nAsia\n1972\n36.088\n13079460\n739.9811\n\n\nAfghanistan\nAsia\n1977\n38.438\n14880372\n786.1134\n\n\n\n\n\nTo cite a table , we can use Table @ref(tab:mytable1)\n\ngapminder %&gt;% \n  filter(country == \"Turkey\") %&gt;% \n  ggplot(aes(year, lifeExp)) +\n  geom_point()\n\n\n\n\nLife Exp. from 1952 to 2007 for Turkey\n\n\n\n\nsee the figure @ref(fig:gg-oz-gapminder)\nAs an example we’ve used the following file"
+  },
+  {
+    "objectID": "week8.html#reference",
+    "href": "week8.html#reference",
+    "title": "stat295(week_8)",
+    "section": "Reference",
+    "text": "Reference\n(Ma et al. 2018)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto_1",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org. here is the main page Quarto"
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "Quarto_1",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org. here is the main page Quarto"
+  },
+  {
+    "objectID": "index.html#running-code",
+    "href": "index.html#running-code",
+    "title": "Quarto_1",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  }
+]
